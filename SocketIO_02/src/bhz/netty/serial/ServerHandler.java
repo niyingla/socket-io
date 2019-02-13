@@ -1,12 +1,11 @@
 package bhz.netty.serial;
 
+import bhz.utils.GzipUtils;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 
 import java.io.File;
 import java.io.FileOutputStream;
-
-import bhz.utils.GzipUtils;
 
 public class ServerHandler extends ChannelHandlerAdapter{
 

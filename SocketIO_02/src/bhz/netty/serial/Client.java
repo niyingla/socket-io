@@ -1,5 +1,6 @@
 package bhz.netty.serial;
 
+import bhz.utils.GzipUtils;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -10,8 +11,6 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 import java.io.File;
 import java.io.FileInputStream;
-
-import bhz.utils.GzipUtils;
 
 public class Client {
 
