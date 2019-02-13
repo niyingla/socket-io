@@ -26,7 +26,7 @@ public class Server {
 		 //设置日志
 		 .handler(new LoggingHandler(LogLevel.INFO))
 		 .childHandler(new ChannelInitializer<SocketChannel>() {
-		     
+
 		 	@Override
 			protected void initChannel(SocketChannel sc) {
 				sc.pipeline().addLast(MarshallingCodeCFactory.buildMarshallingDecoder());
